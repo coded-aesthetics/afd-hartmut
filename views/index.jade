@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+  head
+    title= "Names of people"
+  body
+    h1 Jade!
+    ul
+      each person in persons
+        li
+          a(href='/' + person.name)= person.name
